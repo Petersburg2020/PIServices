@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/Theme.PIServices.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/Theme.PIServices.PopupOverlay"
+                android:layout_height="?attr/actionBarSize"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main"/>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="16dp"
+            app:fab_labelsPosition="left"
+            app:fab_expandDirection="up"
+            app:fab_labelStyle="@style/FamStyle"
+            android:contentDescription="TODO">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add"
+                app:fab_icon="@drawable/instagram"
+                app:fab_title="Instagram"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/grey_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/copy"
+                app:fab_icon="@drawable/twitter"
+                app:fab_title="Twitter"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/grey_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/facebook"
+                app:fab_icon="@drawable/facebook"
+                app:fab_title="Facebook"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/grey_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
